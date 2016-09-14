@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.demandtec.com/DM/2012/01/Services" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.demandtec.com/DM/2012/01/Services" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.demandtec.com/DM/2012/01/Services/Imports">
+      <xsd:import namespace="http://www.demandtec.com/DM/2012/01/Services" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://www.demandtec.com/DM/2012/01/Services/Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Deals_GetPackages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPackages" />
+  </wsdl:message>
+  <wsdl:message name="Deals_GetPackages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPackagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Deals_SavePackages_InputMessage">
+    <wsdl:part name="parameters" element="tns:SavePackages" />
+  </wsdl:message>
+  <wsdl:message name="Deals_SavePackages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SavePackagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Deals_ValidatePackageDeal_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidatePackageDeal" />
+  </wsdl:message>
+  <wsdl:message name="Deals_ValidatePackageDeal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidatePackageDealResponse" />
+  </wsdl:message>
+  <wsdl:message name="Deals_DeletePackage_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePackage" />
+  </wsdl:message>
+  <wsdl:message name="Deals_DeletePackage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePackageResponse" />
+  </wsdl:message>
+  <wsdl:message name="Deals_GetAllPromotionType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPromotionType" />
+  </wsdl:message>
+  <wsdl:message name="Deals_GetAllPromotionType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPromotionTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Deals_IsProductSetNameAvailable_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsProductSetNameAvailable" />
+  </wsdl:message>
+  <wsdl:message name="Deals_IsProductSetNameAvailable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsProductSetNameAvailableResponse" />
+  </wsdl:message>
+  <wsdl:message name="Deals_CreateOrUpdateProductSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdateProductSet" />
+  </wsdl:message>
+  <wsdl:message name="Deals_CreateOrUpdateProductSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdateProductSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="Deals_GetDeals_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeals" />
+  </wsdl:message>
+  <wsdl:message name="Deals_GetDeals_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDealsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Deals">
+    <wsdl:operation name="GetPackages">
+      <wsdl:input wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Packages/GetPackages" message="tns:Deals_GetPackages_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Packages/GetPackagesResponse" message="tns:Deals_GetPackages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SavePackages">
+      <wsdl:input wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Packages/SavePackages" message="tns:Deals_SavePackages_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Packages/SavePackagesResponse" message="tns:Deals_SavePackages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePackageDeal">
+      <wsdl:input wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Packages/ValidatePackageDeal" message="tns:Deals_ValidatePackageDeal_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Packages/ValidatePackageDealResponse" message="tns:Deals_ValidatePackageDeal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePackage">
+      <wsdl:input wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Packages/DeletePackage" message="tns:Deals_DeletePackage_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Packages/DeletePackageResponse" message="tns:Deals_DeletePackage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPromotionType">
+      <wsdl:input wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Packages/GetAllPromotionType" message="tns:Deals_GetAllPromotionType_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Packages/GetAllPromotionTypeResponse" message="tns:Deals_GetAllPromotionType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsProductSetNameAvailable">
+      <wsdl:input wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Packages/IsProductSetNameAvailable" message="tns:Deals_IsProductSetNameAvailable_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Packages/IsProductSetNameAvailableResponse" message="tns:Deals_IsProductSetNameAvailable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrUpdateProductSet">
+      <wsdl:input wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Packages/CreateOrUpdateProductSet" message="tns:Deals_CreateOrUpdateProductSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Packages/CreateOrUpdateProductSetResponse" message="tns:Deals_CreateOrUpdateProductSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeals">
+      <wsdl:input wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Deals/GetDeals" message="tns:Deals_GetDeals_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.demandtec.com/DM/2012/01/Services/Deals/GetDealsResponse" message="tns:Deals_GetDeals_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,10 @@
+﻿@{
+    var layoutName = "~/Areas/Web/Views/Shared/_Layout.cshtml";
+
+    if (@ViewContext.Controller.ViewData["isAngular"] != null && ((bool)@ViewContext.Controller.ViewData["isAngular"] == true))
+    {
+        layoutName = "~/Areas/Web/Views/Shared/_AngularLayout.cshtml";
+    }
+
+    Layout = layoutName;
+}

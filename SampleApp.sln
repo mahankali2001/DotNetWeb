@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApp", "SampleApp.Web\SampleApp.csproj", "{336BC108-67B5-49B6-B213-B9A7188D1206}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdParty", "ThirdParty", "{F036924B-A439-4342-82E8-0B4838948D97}"
+	ProjectSection(SolutionItems) = preProject
+		ThirdParty\AjaxControlToolkit.dll = ThirdParty\AjaxControlToolkit.dll
+		ThirdParty\AjaxPro.2.dll = ThirdParty\AjaxPro.2.dll
+		ThirdParty\ceTe.DynamicPDF.35.dll = ThirdParty\ceTe.DynamicPDF.35.dll
+		ThirdParty\CKEditor.NET.dll = ThirdParty\CKEditor.NET.dll
+		ThirdParty\Demandtec.DealManagement.Services.Client.dll = ThirdParty\Demandtec.DealManagement.Services.Client.dll
+		ThirdParty\DotNetOpenAuth.AspNet.dll = ThirdParty\DotNetOpenAuth.AspNet.dll
+		ThirdParty\DotNetOpenAuth.Core.dll = ThirdParty\DotNetOpenAuth.Core.dll
+		ThirdParty\Elasticsearch.Net.dll = ThirdParty\Elasticsearch.Net.dll
+		ThirdParty\HybridWindowsService.dll = ThirdParty\HybridWindowsService.dll
+		ThirdParty\log4net.dll = ThirdParty\log4net.dll
+		ThirdParty\Microsoft.ReportViewer.WebForms.dll = ThirdParty\Microsoft.ReportViewer.WebForms.dll
+		ThirdParty\Microsoft.Web.UI.WebControls.dll = ThirdParty\Microsoft.Web.UI.WebControls.dll
+		ThirdParty\Neodynamic.SDK.WebClientPrint.dll = ThirdParty\Neodynamic.SDK.WebClientPrint.dll
+		ThirdParty\Nest.dll = ThirdParty\Nest.dll
+		ThirdParty\Newtonsoft.Json.dll = ThirdParty\Newtonsoft.Json.dll
+		ThirdParty\RestSharp.dll = ThirdParty\RestSharp.dll
+		ThirdParty\Sonic.Jms.Cf.Impl.dll = ThirdParty\Sonic.Jms.Cf.Impl.dll
+		ThirdParty\Sonic.Jms.dll = ThirdParty\Sonic.Jms.dll
+		ThirdParty\System.Web.Abstractions.dll = ThirdParty\System.Web.Abstractions.dll
+		ThirdParty\System.Web.Optimization.dll = ThirdParty\System.Web.Optimization.dll
+		ThirdParty\System.Web.Routing.dll = ThirdParty\System.Web.Routing.dll
+		ThirdParty\Telerik.Web.Design.dll = ThirdParty\Telerik.Web.Design.dll
+		ThirdParty\Telerik.Web.UI.dll = ThirdParty\Telerik.Web.UI.dll
+		ThirdParty\Telerik.Web.UI.Skins.dll = ThirdParty\Telerik.Web.UI.Skins.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC4", "MVC4", "{F45C34F3-1538-48D3-8A9E-FC3F6FAE43D0}"
+	ProjectSection(SolutionItems) = preProject
+		ThirdParty\MVC4\DotNetOpenAuth.Core.dll = ThirdParty\MVC4\DotNetOpenAuth.Core.dll
+		ThirdParty\MVC4\Microsoft.Web.Infrastructure.dll = ThirdParty\MVC4\Microsoft.Web.Infrastructure.dll
+		ThirdParty\MVC4\Microsoft.Web.Infrastructure.xml = ThirdParty\MVC4\Microsoft.Web.Infrastructure.xml
+		ThirdParty\MVC4\Microsoft.Web.WebPages.OAuth.dll = ThirdParty\MVC4\Microsoft.Web.WebPages.OAuth.dll
+		ThirdParty\MVC4\Microsoft.Web.WebPages.OAuth.xml = ThirdParty\MVC4\Microsoft.Web.WebPages.OAuth.xml
+		ThirdParty\MVC4\NuGet.Core.dll = ThirdParty\MVC4\NuGet.Core.dll
+		ThirdParty\MVC4\System.Net.Http.dll = ThirdParty\MVC4\System.Net.Http.dll
+		ThirdParty\MVC4\System.Net.Http.Formatting.dll = ThirdParty\MVC4\System.Net.Http.Formatting.dll
+		ThirdParty\MVC4\System.Net.Http.WebRequest.dll = ThirdParty\MVC4\System.Net.Http.WebRequest.dll
+		ThirdParty\MVC4\System.Web.Helpers.dll = ThirdParty\MVC4\System.Web.Helpers.dll
+		ThirdParty\MVC4\System.Web.Helpers.xml = ThirdParty\MVC4\System.Web.Helpers.xml
+		ThirdParty\MVC4\System.Web.Http.dll = ThirdParty\MVC4\System.Web.Http.dll
+		ThirdParty\MVC4\System.Web.Http.SelfHost.dll = ThirdParty\MVC4\System.Web.Http.SelfHost.dll
+		ThirdParty\MVC4\System.Web.Http.WebHost.dll = ThirdParty\MVC4\System.Web.Http.WebHost.dll
+		ThirdParty\MVC4\System.Web.Mvc.dll = ThirdParty\MVC4\System.Web.Mvc.dll
+		ThirdParty\MVC4\System.Web.Razor.dll = ThirdParty\MVC4\System.Web.Razor.dll
+		ThirdParty\MVC4\System.Web.Razor.xml = ThirdParty\MVC4\System.Web.Razor.xml
+		ThirdParty\MVC4\System.Web.WebPages.Administration.dll = ThirdParty\MVC4\System.Web.WebPages.Administration.dll
+		ThirdParty\MVC4\System.Web.WebPages.Administration.xml = ThirdParty\MVC4\System.Web.WebPages.Administration.xml
+		ThirdParty\MVC4\System.Web.WebPages.Deployment.dll = ThirdParty\MVC4\System.Web.WebPages.Deployment.dll
+		ThirdParty\MVC4\System.Web.WebPages.Deployment.xml = ThirdParty\MVC4\System.Web.WebPages.Deployment.xml
+		ThirdParty\MVC4\System.Web.WebPages.dll = ThirdParty\MVC4\System.Web.WebPages.dll
+		ThirdParty\MVC4\System.Web.WebPages.Razor.dll = ThirdParty\MVC4\System.Web.WebPages.Razor.dll
+		ThirdParty\MVC4\System.Web.WebPages.Razor.xml = ThirdParty\MVC4\System.Web.WebPages.Razor.xml
+		ThirdParty\MVC4\System.Web.WebPages.xml = ThirdParty\MVC4\System.Web.WebPages.xml
+		ThirdParty\MVC4\WebMatrix.Data.dll = ThirdParty\MVC4\WebMatrix.Data.dll
+		ThirdParty\MVC4\WebMatrix.Data.xml = ThirdParty\MVC4\WebMatrix.Data.xml
+		ThirdParty\MVC4\WebMatrix.WebData.dll = ThirdParty\MVC4\WebMatrix.WebData.dll
+		ThirdParty\MVC4\WebMatrix.WebData.xml = ThirdParty\MVC4\WebMatrix.WebData.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApp.Services.Client", "SampleApp.Services.Client\SampleApp.Services.Client.csproj", "{85B16183-451D-44AF-BCA1-2639BC92DB8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{336BC108-67B5-49B6-B213-B9A7188D1206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{336BC108-67B5-49B6-B213-B9A7188D1206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{336BC108-67B5-49B6-B213-B9A7188D1206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{336BC108-67B5-49B6-B213-B9A7188D1206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85B16183-451D-44AF-BCA1-2639BC92DB8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B16183-451D-44AF-BCA1-2639BC92DB8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B16183-451D-44AF-BCA1-2639BC92DB8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B16183-451D-44AF-BCA1-2639BC92DB8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F45C34F3-1538-48D3-8A9E-FC3F6FAE43D0} = {F036924B-A439-4342-82E8-0B4838948D97}
+	EndGlobalSection
+EndGlobal

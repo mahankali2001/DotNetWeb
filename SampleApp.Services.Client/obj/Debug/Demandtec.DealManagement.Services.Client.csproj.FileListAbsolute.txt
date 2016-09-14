@@ -1,0 +1,7 @@
+C:\IBM\DM\rtc\Main\MSApplications\DealManagement\Application\Core\_drop\log4net.config
+C:\IBM\DM\rtc\Main\MSApplications\DealManagement\Application\Core\_drop\Demandtec.DealManagement.Services.Client.dll.config
+C:\IBM\DM\rtc\Main\MSApplications\DealManagement\Application\Core\_drop\Demandtec.DealManagement.Services.Client.dll
+C:\IBM\DM\rtc\Main\MSApplications\DealManagement\Application\Core\_drop\Demandtec.DealManagement.Services.Client.pdb
+C:\IBM\DM\rtc\Main\MSApplications\DealManagement\Application\Core\DealManagement.Services.Client\obj\Debug\Demandtec.DealManagement.Services.Client.csprojResolveAssemblyReference.cache
+C:\IBM\DM\rtc\Main\MSApplications\DealManagement\Application\Core\DealManagement.Services.Client\obj\Debug\Demandtec.DealManagement.Services.Client.dll
+C:\IBM\DM\rtc\Main\MSApplications\DealManagement\Application\Core\DealManagement.Services.Client\obj\Debug\Demandtec.DealManagement.Services.Client.pdb

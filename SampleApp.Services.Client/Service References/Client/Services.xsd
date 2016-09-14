@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.demandtec.com/DM/2012/01/Services" elementFormDefault="qualified" targetNamespace="http://www.demandtec.com/DM/2012/01/Services" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.demandtec.com/DM/2012/01/Services/Data" />
+  <xs:element name="GetPackages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="commonDealId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPackagesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://www.demandtec.com/DM/2012/01/Services/Data" minOccurs="0" name="GetPackagesResult" nillable="true" type="q1:ArrayOfCommonDealPackage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SavePackages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://www.demandtec.com/DM/2012/01/Services/Data" minOccurs="0" name="commonDealPackages" nillable="true" type="q2:ArrayOfCommonDealPackage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SavePackagesResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidatePackageDeal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://www.demandtec.com/DM/2012/01/Services/Data" minOccurs="0" name="commonDealPackages" nillable="true" type="q3:ArrayOfCommonDealPackage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidatePackageDealResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePackage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="commonDealPackageId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePackageResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllPromotionType">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllPromotionTypeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsProductSetNameAvailable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="commonDealId" type="xs:int" />
+        <xs:element minOccurs="0" name="productSetName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsProductSetNameAvailableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsProductSetNameAvailableResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrUpdateProductSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="commonDealId" type="xs:int" />
+        <xs:element xmlns:q4="http://www.demandtec.com/DM/2012/01/Services/Data" minOccurs="0" name="productSet" nillable="true" type="q4:ProductSet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrUpdateProductSetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://www.demandtec.com/DM/2012/01/Services/Data" minOccurs="0" name="CreateOrUpdateProductSetResult" nillable="true" type="q5:ProductSet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeals">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDealsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDealsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

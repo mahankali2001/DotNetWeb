@@ -1,0 +1,7 @@
+﻿.cMenu {white-space: nowrap; position:relative;}
+.cMenu > a + span {position:relative; white-space: nowrap;}
+.cMenu > a + span > .icon {background-image:url('../images/CMAction.gif'); vertical-align:top; width:11px; height:11px;display:inline-block;}
+.newCM {display:none;position:absolute; left:11px; border:1px solid LightSteelBlue; background-color:#F0EEE1; font-size:9pt;z-index: 90;}
+.newCM span {display:block; padding: 2px 20px 2px 10px; /* font-weight:bold; background-color:#C1D2EE; border-bottom:1px solid lightsteelblue; #ACA899*/}
+.newCM + div {position: absolute; /*width: 175px; height: 182px; z-index: -1;*/ display: none; top:0;}
+.cMenu .error {color:#800000;}

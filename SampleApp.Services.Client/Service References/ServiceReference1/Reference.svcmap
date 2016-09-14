@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="da3a3b0a-a323-45f9-85d2-3ac70db906d0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/MicroServiceFeatureName" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MicroServiceFeatureName.wsdl" MetadataType="Wsdl" ID="86854ec0-093d-4b5c-8805-4a7bc882ff52" SourceId="1" SourceUrl="http://localhost/MicroServiceFeatureName?wsdl=wsdl0" />
+    <MetadataFile FileName="MicroServiceFeatureName.xsd" MetadataType="Schema" ID="a276f495-3869-4cf1-88f3-10d7d228361c" SourceId="1" SourceUrl="http://localhost/MicroServiceFeatureName?xsd=xsd2" />
+    <MetadataFile FileName="MicroServiceFeatureName1.xsd" MetadataType="Schema" ID="14d62f34-a7a1-4bf6-8c2e-9aea06ce3b7d" SourceId="1" SourceUrl="http://localhost/MicroServiceFeatureName?xsd=xsd0" />
+    <MetadataFile FileName="MicroServiceFeatureName2.xsd" MetadataType="Schema" ID="a468ffb2-6682-4431-b1af-d73f2aad7b44" SourceId="1" SourceUrl="http://localhost/MicroServiceFeatureName?xsd=xsd1" />
+    <MetadataFile FileName="MicroServiceFeatureName.disco" MetadataType="Disco" ID="8915eea9-b5e3-42ad-90b9-65a6bd17735a" SourceId="1" SourceUrl="http://localhost/MicroServiceFeatureName?disco" />
+    <MetadataFile FileName="TEMPLATEServiceImplementation.wsdl" MetadataType="Wsdl" ID="b1376b1b-5355-4a51-878e-39ae970e7079" SourceId="1" SourceUrl="http://localhost/MicroServiceFeatureName?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

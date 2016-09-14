@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.demandtec.com/DM/2012/01/Services/Data" elementFormDefault="qualified" targetNamespace="http://www.demandtec.com/DM/2012/01/Services/Data" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfCommonDealPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CommonDealPackage" nillable="true" type="tns:CommonDealPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCommonDealPackage" nillable="true" type="tns:ArrayOfCommonDealPackage" />
+  <xs:complexType name="CommonDealPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AllowanceType" nillable="true" type="tns:AllowanceType" />
+      <xs:element minOccurs="0" name="AllowanceTypeId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ChangedDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CommonDealId" type="xs:int" />
+      <xs:element minOccurs="0" name="CommonDealPackageId" type="xs:int" />
+      <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PackageRelationType" nillable="true" type="tns:PackageRelationType" />
+      <xs:element minOccurs="0" name="PackageRelationTypeId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PrimaryProductSet" nillable="true" type="tns:ProductSet" />
+      <xs:element minOccurs="0" name="PrimaryProductSetBasis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryProductSetId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PrimaryProductSetQuantity" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductSetRelationType" nillable="true" type="tns:ProductSetRelationType" />
+      <xs:element minOccurs="0" name="ProductSetRelationTypeId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="RowVersion" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="SecondaryProductSetBasis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondaryProductSetId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SecondaryProductSetQuantity" type="xs:int" />
+      <xs:element minOccurs="0" name="TransactionType" nillable="true" type="tns:TransactionType" />
+      <xs:element minOccurs="0" name="TransactionTypeId" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CommonDealPackage" nillable="true" type="tns:CommonDealPackage" />
+  <xs:complexType name="AllowanceType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LookUpEntity">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AllowanceType" nillable="true" type="tns:AllowanceType" />
+  <xs:complexType name="LookUpEntity">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="LookUpEntity" nillable="true" type="tns:LookUpEntity" />
+  <xs:complexType name="PackageRelationType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LookUpEntity">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PackageRelationType" nillable="true" type="tns:PackageRelationType" />
+  <xs:complexType name="ProductSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ProductSetId" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductSetItems" nillable="true" type="tns:ArrayOfProductSetItem" />
+      <xs:element minOccurs="0" name="ProductSetName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RowVersion" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductSet" nillable="true" type="tns:ProductSet" />
+  <xs:complexType name="ArrayOfProductSetItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProductSetItem" nillable="true" type="tns:ProductSetItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProductSetItem" nillable="true" type="tns:ArrayOfProductSetItem" />
+  <xs:complexType name="ProductSetItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ProductSet" nillable="true" type="tns:ProductSet" />
+      <xs:element minOccurs="0" name="ProductSetId" type="xs:int" />
+      <xs:element minOccurs="0" name="RetailItem" nillable="true" type="tns:RetailItem" />
+      <xs:element minOccurs="0" name="RetailItemId" type="xs:int" />
+      <xs:element minOccurs="0" name="RowVersion" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductSetItem" nillable="true" type="tns:ProductSetItem" />
+  <xs:complexType name="RetailItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ItemDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemGroup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PackSize" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RetailItemId" type="xs:int" />
+      <xs:element minOccurs="0" name="RetailItemNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="SellingGroup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UPCBlock" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UPCCase" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UPCConsumer" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RetailItem" nillable="true" type="tns:RetailItem" />
+  <xs:complexType name="ProductSetRelationType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LookUpEntity">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProductSetRelationType" nillable="true" type="tns:ProductSetRelationType" />
+  <xs:complexType name="TransactionType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LookUpEntity">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TransactionType" nillable="true" type="tns:TransactionType" />
+</xs:schema>
