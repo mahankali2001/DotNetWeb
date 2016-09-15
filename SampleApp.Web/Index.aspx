@@ -2,7 +2,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml"  lang="en" ng-app="ngdemo">
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
 <head>
     <meta charset="utf-8">
     <title>My AngularJS App</title>
@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="lib/angular/bootstrap.min.css" /> 
 </head>
 <body>
+<div id="usersDiv" ng-app="ngdemo">
     <div ng-view></div>
+    </div>
 
     <!-- In production use:
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
