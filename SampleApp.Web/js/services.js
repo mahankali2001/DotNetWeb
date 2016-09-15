@@ -16,7 +16,7 @@ services.factory('UserFactory', function ($resource) {
 });
 */
 
-ngdemo.service('ngdemo.services', ['$http', function ($http) {
+ngdemo.service('ngdemo.services', ['$http', '$location', function ($http, $location) {
 
     /*this.headers = {
     headers: {'OAuth': 'oauth_consumer_key=8737055b-0cc8-4977-99d2-573252fe9906&oauth_nonce=188465&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1384200442&oauth_version=1.0&oauth_signature=60Zy575Xv2oQDMo%2FGBUjcyXTF6Y%3D',
@@ -71,8 +71,11 @@ ngdemo.service('ngdemo.services', ['$http', function ($http) {
     };*/
 
     this.GetUrl = function(methodName) {
-        return "web/user/" + methodName;
-        //return methodName;
+        if ($location.absUrl().indexOf("web/user/") === -1) {
+            return "web/user/" + methodName;
+        }
+        //return "web/user/" + methodName;
+        return methodName;
         //return "http://localhost/MicroServiceFeatureName/1.0/" + methodName;
     },
     this.GetUsers = function(callback) {
