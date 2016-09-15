@@ -67,6 +67,21 @@ namespace AppWeb.Controllers
             //}
         }
 
+        public void DeleteUser(int uid)
+        {
+            // to check the seesion timout
+            //if (HandleSessionTimeOut())
+            //{
+
+            Rest.Instance.DeleteUser(uid + "");
+          //  return Json(response, JsonRequestBehavior.AllowGet);
+            //}
+            //else
+            //{
+            //    return Json("SessionTimeout", JsonRequestBehavior.AllowGet);
+            //}
+        }
+
         public JsonResult SaveUser(UserRequest ur)
         {
             // to check the seesion timout

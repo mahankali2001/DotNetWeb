@@ -92,6 +92,16 @@ ngdemo.service('ngdemo.services', ['$http', '$location', function ($http, $locat
             if (typeof callback == 'function') callback(angular.fromJson(result).GetUserResult);
         });
     };
+
+    this.DeleteUser = function (uid, callback) {
+        var json = { uid: uid };
+        var data = JSON.stringify(json);
+        $http.post(this.GetUrl("DeleteUser"), data, this.headers).success(function (data) {
+            var result = (data) || [];
+            if (typeof callback == 'function') callback(angular.fromJson(result).DeleteUserResult);
+        });
+    };
+
     this.SaveUser = function (user, callback) {
         $http.post(this.GetUrl("SaveUser"), user, this.headers)
             .success(function (data, status, headers, config) {
