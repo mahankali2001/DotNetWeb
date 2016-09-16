@@ -82,6 +82,21 @@ namespace AppWeb.Controllers
             //}
         }
 
+        public void CopyUser(int uid)
+        {
+            // to check the seesion timout
+            //if (HandleSessionTimeOut())
+            //{
+
+            Rest.Instance.CopyUser(uid + "");
+            //  return Json(response, JsonRequestBehavior.AllowGet);
+            //}
+            //else
+            //{
+            //    return Json("SessionTimeout", JsonRequestBehavior.AllowGet);
+            //}
+        }
+
         public JsonResult SaveUser(UserRequest ur)
         {
             // to check the seesion timout

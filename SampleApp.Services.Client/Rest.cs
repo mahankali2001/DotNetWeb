@@ -142,6 +142,21 @@ namespace SampleApp.Services.Client
             //return result;
         }
 
+        public void CopyUser(string uid)
+        {
+            string uri = string.Empty;
+            uri = string.Format("{0}/app/users/{1}/copy/", URI, uid);
+            const Method m = Method.POST;
+            var request = new RestRequest(uri, m);
+            SetHeadersWithoutSession(request, new Uri(uri), m.ToString());
+            request.RequestFormat = DataFormat.Json;
+            request.OnBeforeDeserialization = resp => { resp.ContentType = "application/json"; };
+            IRestResponse content = _client.Execute(request);//
+            if (content == null) throw new ArgumentNullException("content");
+            //var result = content.Content.ToString(CultureInfo.InvariantCulture);
+            //return result;
+        }
+
 
         public string SaveUsers(UserRequest req)
         {
